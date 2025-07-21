@@ -1,0 +1,13 @@
+[macos]
+depends = []
+
+[macos.files]
+"git" = "~/.config/git"
+"lazygit" = "~/Library/Application Support/lazygit"
+"nushell" = "~/.config/nushell"
+"nvim" = "~/.config/nvim"
+"wezterm" = "~/.config/wezterm"
+"starship" = "~/.config/starship"
+"vscode" = "~/Library/Application Support/Code/User"
+"gitui" = "~/.config/gitui"
+

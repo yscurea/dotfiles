@@ -1,0 +1,9 @@
+{
+	"Freezed class template generated": {
+        "prefix": "fin",
+        "description": "class name by file name",
+        "body": [
+			"${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}"
+        ]
+    },
+}

@@ -1,0 +1,13 @@
+[linux]
+depends = []
+
+[linux.files]
+"git" = "~/.config/git"
+"lazygit" = "~/.config/lazygit"
+"nushell" = "~/.config/nushell"
+"nvim" = "~/.config/nvim"
+"wezterm" = "~/.config/wezterm"
+"starship" = "~/.config/starship"
+"vscode" = "~/.config/Code/User"
+"gitui" = "~/.config/gitui"
+

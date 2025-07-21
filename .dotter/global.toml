@@ -1,0 +1,19 @@
+[helpers]
+
+[default]
+depends = []
+
+[default.files]
+"git" = "~/.config/git"
+"lazygit" = "~/.config/lazygit"
+"nushell" = "~/.config/nushell"
+"nvim" = "~/.config/nvim"
+"wezterm" = "~/.config/wezterm"
+"starship" = "~/.config/starship"
+"vscode" = "~/AppData/Roaming/Code/User"
+"gitui" = "~/AppData/Roaming/gitui"
+
+[default.variables]
+
+[settings]
+default_target_type = "symbolic"

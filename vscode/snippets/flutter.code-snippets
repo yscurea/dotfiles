@@ -1,0 +1,71 @@
+{
+	"Freezed class template generated without json": {
+        "prefix": "fr",
+        "description": "Create a Freezed class",
+        "body": [
+            "import 'package:freezed_annotation/freezed_annotation.dart';",
+            "import 'package:flutter/foundation.dart';",
+            "part '${TM_DIRECTORY/^(.*?lib\\\\?)|([^\\\\]+\\\\?)/${2:+../}/g}_generated${TM_DIRECTORY/^(.*?lib)|(\\\\)/${2:+/}/g}/${TM_FILENAME_BASE}.freezed.dart';",
+            "",
+            "@freezed",
+            "class ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}} with _$${1} {",
+            "\tconst factory ${1}({",
+            "\t\t${2:required String id},",
+            "\t}) = _${1};",
+            "}",
+        ]
+    },
+	"Freezed class template generated with json": {
+        "prefix": "frzjs",
+        "description": "Create a Freezed class",
+        "body": [
+            "import 'package:freezed_annotation/freezed_annotation.dart';",
+            "import 'package:flutter/foundation.dart';",
+            "part '${RELATIVE_FILEPATH/(lib\\\\)|(\\\\[._a-zA-Z0-9]+)$|(\\\\)|([_.a-zA-Z0-9]+)/${3:+/}${4:+..}/gm}/_generated/${TM_DIRECTORY/^.+\\\\(.*)$/$1/}/${TM_FILENAME_BASE}.freezed.dart';",
+            "part '${RELATIVE_FILEPATH/(lib\\\\)|(\\\\[._a-zA-Z0-9]+)$|(\\\\)|([_.a-zA-Z0-9]+)/${3:+/}${4:+..}/gm}/_generated/${TM_DIRECTORY/^.+\\\\(.*)$/$1/}/${TM_FILENAME_BASE}.g.dart';",
+            "",
+            "@freezed",
+            "class ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}} with _$${1:DataClass} {",
+            "\tconst factory ${1}({",
+            "\t\t${2}",
+            "\t}) = _${1:DataClass};",
+			"\tfactory ${1}.fromJson(Map<String, dynamic> json) => _$${1}FromJson(json);",
+            "}",
+			"\tfactory ${1}.fromJson(Map<String, dynamic> json) => _$${1}FromJson(json);",
+        ]
+    },
+	// "Freezed class template": {
+    //     "prefix": "frzclass",
+    //     "description": "Create a Freezed class",
+    //     "body": [
+    //         "import 'package:freezed_annotation/freezed_annotation.dart';",
+    //         "import 'package:flutter/foundation.dart';",
+    //         "part '${TM_FILENAME_BASE}.freezed.dart';",
+    //         "part '${TM_FILENAME_BASE}.g.dart';",
+    //         "",
+    //         "@freezed",
+    //         "class ${1:DataClass} with _$${1:DataClass} {",
+    //         "\tconst factory ${1:DataClass}({",
+    //         "\t\t@Default(0) int counter, // Add your fields here",
+    //         "\t}) = _${1:DataClass};",
+	// 		"\tfactory ${1}.fromJson(Map<String, dynamic> json) => _$${1}FromJson(json);",
+    //         "}"
+    //     ]
+    // },
+    "statelesswidget generater": {
+        "prefix": "sls",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "",
+            "class ${1:ClassName} extends StatelessWidget {",
+            "\tconst ${1:ClassName}({Key? key}) : super(key: key);",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn const Scaffold(",
+            "\t\t\tbody: ${2:Text('Sample')},",
+            "\t\t);",
+            "\t}",
+            "}",
+        ]
+    }
+}
