@@ -160,7 +160,8 @@ return {
 				end
 				return " " .. table.concat(clients, ", ")
 			end
-
+			local navic = require("nvim-navic")
+			vim.o.winbar = "󱞄"
 			require("lualine").setup({
 				options = {
 					theme = "auto",
@@ -174,6 +175,18 @@ return {
 					lualine_x = { clients_lsp },
 					lualine_y = { "fileformat", "filetype", "encoding" },
 					lualine_z = { "progress", "location" },
+				},
+				winbar = {
+					lualine_c = {
+						{
+							function()
+								return navic.get_location()
+							end,
+							cond = function()
+								return navic.is_available()
+							end,
+						},
+					},
 				},
 			})
 		end,

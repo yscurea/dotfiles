@@ -39,11 +39,13 @@
 		"HOMEPATH",
 		"Jetpack",
 		"laravel",
+		"LTWH",
 		"marp",
 		"mypy",
 		"neovim",
 		"Nuxt",
 		"nvim",
+		"ollama",
 		"Pageless",
 		"pylint",
 		"rgba",
@@ -52,6 +54,7 @@
 		"schemars",
 		"serde",
 		"todohighlight",
+		"USERPROFILE",
 		"vercel",
 		"vimrc"
 	],
@@ -246,5 +249,11 @@
 	"files.autoSave": "off",
 	"window.titleBarStyle": "custom",
 	"accessibility.signalOptions.volume": 0,
-	"github.copilot.nextEditSuggestions.enabled": true
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	}
 }
